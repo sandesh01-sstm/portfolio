@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HimaVa Labs — Trendy Prints & Gifts</title>
+  <meta name="description" content="HimaVa Labs — trendy photo frames, T-shirts, keychains and custom prints.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">🔥 TRENDING DROPS ARE LIVE — Custom prints made your way.</div>
+
+  <header class="header">
+    <a class="brand" href="#home" aria-label="HimaVa Labs home">
+      <span class="brand-mark">H</span>
+      <span><b>HIMAVA</b><small>LABS</small></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#custom">Custom</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+      <button class="icon-btn" id="wishlistBtn" aria-label="Wishlist">♡<span class="badge" id="wishCount">0</span></button>
+      <button class="cart-btn" id="cartBtn">Cart <span id="cartCount">0</span></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">HIMAVA LABS / TRENDY COLLECTION</p>
+        <h1>Make your wall.<br><em>Tell your story.</em></h1>
+        <p class="hero-copy">Frames, tees, keychains and custom prints inspired by the icons you love.</p>
+        <div class="hero-buttons">
+          <a href="#shop" class="btn btn-light">Shop collection <span>→</span></a>
+          <a href="#custom" class="btn btn-ghost">Make it custom</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>100+</b><span>Design ideas</span></div>
+          <div><b>Custom</b><span>Your photo, your style</span></div>
+          <div><b>Made</b><span>With care</span></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="poster poster-back">LEGENDS<br><small>COLLECTION</small></div>
+        <div class="poster poster-main">
+          <span class="poster-tag">DROP 01</span>
+          <div class="poster-title">ICON<br><strong>MODE</strong></div>
+          <div class="poster-line"></div>
+          <div class="poster-bottom">FRAME / TEE / KEYCHAIN</div>
+        </div>
+        <div class="floating-card">NEW<br><strong>DROPS</strong></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Collections">
+      <div>MARVEL <span>✦</span> DC <span>✦</span> FOOTBALL <span>✦</span> ANIME <span>✦</span> CUSTOM <span>✦</span> ICONS <span>✦</span> GIFTS <span>✦</span></div>
+    </section>
+
+    <section class="section" id="shop">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">SHOP THE DROP</p>
+          <h2>Trending collection</h2>
+        </div>
+        <button class="text-btn" id="viewAllBtn">View all →</button>
+      </div>
+
+      <div class="category-row" id="categoryRow"></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="custom-section" id="custom">
+      <div class="custom-copy">
+        <p class="eyebrow">YOUR PHOTO. YOUR PIECE.</p>
+        <h2>Turn a memory into something you can keep.</h2>
+        <p>Upload a photo, choose a product and imagine your custom piece. This demo gives you the front-end experience now; real order processing can be added later.</p>
+        <a class="btn btn-light" href="#custom-builder">Start customising <span>→</span></a>
+      </div>
+      <div class="custom-builder" id="custom-builder">
+        <div class="upload-zone" id="uploadZone">
+          <input type="file" id="photoInput" accept="image/*" hidden>
+          <div class="upload-icon">＋</div>
+          <h3>Drop your photo here</h3>
+          <p>or click to choose an image</p>
+          <img id="uploadPreview" alt="Your selected preview">
+        </div>
+        <div class="custom-options">
+          <label>Product
+            <select id="customProduct">
+              <option value="499">Photo Frame — Rs. 499</option>
+              <option value="799">Premium Frame — Rs. 799</option>
+              <option value="699">Custom T-Shirt — Rs. 699</option>
+              <option value="299">Custom Keychain — Rs. 299</option>
+            </select>
+          </label>
+          <label>Size
+            <select id="customSize">
+              <option value="0">Standard</option>
+              <option value="150">Large + Rs. 150</option>
+              <option value="300">XL + Rs. 300</option>
+            </select>
+          </label>
+          <div class="custom-total">Estimated total <strong id="customTotal">Rs. 499</strong></div>
+          <button class="btn btn-dark" id="addCustomBtn">Add custom item</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why" id="about">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">WHY HIMAVA</p>
+          <h2>Made for your kind of collection.</h2>
+        </div>
+      </div>
+      <div class="why-grid">
+        <article><span>01</span><h3>Trend-led designs</h3><p>Fresh drops inspired by movies, sports, anime, music and pop culture.</p></article>
+        <article><span>02</span><h3>Custom energy</h3><p>Your photo, your favourite icon, your idea — turned into a physical piece.</p></article>
+        <article><span>03</span><h3>Gift-ready</h3><p>Easy picks for birthdays, best friends, couples, fans and collectors.</p></article>
+      </div>
+    </section>
+
+    <section class="instagram">
+      <div>
+        <p class="eyebrow">FOLLOW THE DROP</p>
+        <h2>@himavalabs</h2>
+        <p>See new designs and collection updates on Instagram.</p>
+      </div>
+      <a class="btn btn-dark" href="https://www.instagram.com/himavalabs/" target="_blank" rel="noopener">Open Instagram ↗</a>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow">LET'S MAKE SOMETHING</p>
+          <h2>Have a design in mind?</h2>
+          <p>For custom requests, bulk orders or collaborations, reach out to HimaVa Labs.</p>
+        </div>
+        <a class="btn btn-light" href="mailto:hello@himavalabs.com">Contact us →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand footer-brand"><span class="brand-mark">H</span><span><b>HIMAVA</b><small>LABS</small></span></div>
+    <p>© 2026 HimaVa Labs. Demo website.</p>
+    <div><a href="#shop">Shop</a><a href="#custom">Custom</a><a href="#contact">Contact</a></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="drawer" id="cartDrawer">
+    <div class="drawer-head"><h2>Your cart</h2><button class="close-btn" data-close>×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="drawer-footer">
+      <div class="subtotal"><span>Subtotal</span><strong id="cartSubtotal">Rs. 0</strong></div>
+      <button class="btn btn-dark full" id="checkoutBtn">Proceed to checkout</button>
+      <p class="tiny">Demo checkout — no real payment is processed.</p>
+    </div>
+  </aside>
+
+  <aside class="drawer search-drawer" id="searchDrawer">
+    <div class="drawer-head"><h2>Search</h2><button class="close-btn" data-close>×</button></div>
+    <input class="search-input" id="searchInput" type="search" placeholder="Search frames, tees, football...">
+    <div class="search-results" id="searchResults"></div>
+  </aside>
+
+  <div class="modal-wrap" id="productModal">
+    <div class="modal">
+      <button class="close-btn modal-close" data-close>×</button>
+      <div class="modal-product">
+        <div class="product-visual large" id="modalVisual"></div>
+        <div class="modal-info">
+          <p class="eyebrow" id="modalCategory"></p>
+          <h2 id="modalName"></h2>
+          <div class="rating">★★★★★ <span>4.9</span></div>
+          <p id="modalDescription"></p>
+          <strong class="modal-price" id="modalPrice"></strong>
+          <label>Quantity <input type="number" min="1" value="1" id="modalQty"></label>
+          <button class="btn btn-dark full" id="modalAdd">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-wrap" id="checkoutModal">
+    <div class="modal checkout">
+      <button class="close-btn modal-close" data-close>×</button>
+      <p class="eyebrow">DEMO CHECKOUT</p>
+      <h2>Complete your order</h2>
+      <form id="checkoutForm">
+        <label>Full name<input required name="name" placeholder="Your name"></label>
+        <label>Phone number<input required name="phone" placeholder="98XXXXXXXX"></label>
+        <label>Delivery address<textarea required name="address" placeholder="Your delivery address"></textarea></label>
+        <label>Payment method<select name="payment"><option>Cash on Delivery</option><option>eSewa (demo)</option><option>Khalti (demo)</option></select></label>
+        <div class="checkout-total">Order total <strong id="checkoutTotal">Rs. 0</strong></div>
+        <button class="btn btn-dark full" type="submit">Place demo order</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
